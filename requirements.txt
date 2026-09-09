@@ -1,0 +1,3 @@
+git+https://github.com/Cre8tiveStuff/AIG-Data-Quality-Eval-Platform.git
+pandas
+pyarrow
