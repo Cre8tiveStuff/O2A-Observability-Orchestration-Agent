@@ -1,4 +1,6 @@
 git+https://github.com/Cre8tiveStuff/AIG-Data-Quality-Eval-Platform.git
 pandas
 pyarrow
-langchaun
+langchain
+langchain-ollama
+git+https://github.com/Cre8tiveStuff/procurement-rag.git
