@@ -1,4 +1,8 @@
 from    tools import evaluate_dataset
+from    db import init_db
+
+init_db()
+
 
 def     test_evaluate_dataset_returns_expected_shape():
         result = evaluate_dataset([{"prompt":  "Hi", "response":  "A real answer here."}])
