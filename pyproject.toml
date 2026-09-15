@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["agent", "tools", "orchestrator", "db"]
+
+[project]
+name = "o2a-observability-orchestration-agent"
+version = "0.1.0"
+description = "Closed-loop AI sysytem:  agents that verify their own output using local tools and observability"
+requires-python = ">=3.9"
+dependencies = [
+    "aig-data-quality-eval-engine @ git+https://github.com/Cre8tiveStuff/AIG-Data-Quality-Eval-Platform.git",
+    "procurement-rag @ git+https://github.com/Cre8tiveStuff/procurement-rag.git",
+    "langchain",
+    "langchain-ollama",
+
+ ]
+ 
