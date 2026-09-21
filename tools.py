@@ -1,3 +1,4 @@
+
 from    db import init_db, log_action
 
 from    src.evaluators import DataQualityEvaluator
@@ -34,3 +35,8 @@ def     answer_question(question, db_dir, top_k=2, model_name="llama3.2"):
         result = {"answer": answer, "chunks":  chunks}
         log_action("answer_question", question, result, "PASS", len(chunks))
         return result
+
+from    src.refresh_index import refresh_index as _refresh_index
+
+def     refresh_index_tool(file_path):
+        return _refresh_index(file_path)
